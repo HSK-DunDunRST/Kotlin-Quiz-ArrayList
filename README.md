@@ -1,21 +1,29 @@
-# Quiz Example
+# 퀴즈 예제
 
-This project is a quiz application designed for the Android platform, developed using Kotlin. Users can answer a variety of questions to test their knowledge and track the number of correct answers.
+이 프로젝트는 Android 플랫폼을 위한 퀴즈 애플리케이션으로, Kotlin을 사용하여 개발되었습니다.  
+아직 완성된 프로젝트가 아니며, 현재 상태로 코드 실행하면 문제가 발생할 수 있습니다.  
 
-## Key Features
+## 예정중인 개발
+- Room 데이터베이스 적용
+- Room 데이터베이스 적용 완료 시 문제 ArrayList 구조에서 변경.
+- 랭킹 시스템 개선
 
-### 1. Quiz Progression
-- Users can answer a series of provided questions.
-- Each question offers multiple choices, and users must select the correct answer.
 
-### 2. Score Recording and Management
-- Upon completing the quiz, the user’s score is calculated.
 
-### 3. Simple and Intuitive User Interface
-- A user-friendly, intuitive UI allows easy navigation.
-- The results page displays the user’s score after the quiz.
+## 주요 기능
 
-## Project Structure
+### 1. 퀴즈 진행
+- 사용자는 제공된 일련의 질문에 답할 수 있습니다.
+- 각 질문은 여러 선택지를 제공하며, 사용자는 정답을 선택해야 합니다.
+
+### 2. 점수 기록 및 관리
+- 퀴즈가 완료되면 사용자의 점수가 계산됩니다.
+
+### 3. 간단하고 직관적인 사용자 인터페이스
+- 사용하기 쉽고 직관적인 UI가 있어 편리하게 탐색할 수 있습니다.
+- 결과 페이지에서 퀴즈 완료 후 사용자의 점수를 확인할 수 있습니다.
+
+## 프로젝트 구조
 
 ```
 Quiz_Example/
@@ -49,36 +57,16 @@ Quiz_Example/
 ├── README.md
 ```
 
-### Key Files and Directories
+### 주요 파일 및 디렉터리
 
-- **`app/src/main/java/kr/co/ipdisk/quiz/`**: Contains core application logic in Kotlin files.
-  - **`MainActivity.kt`**: Entry point of the app, managing the quiz’s start screen.
-  - **`QuestionActivity.kt`**: Displays each quiz question and handles user responses.
-  - **`ResultActivity.kt`**: Displays quiz results after completion.
+- **`app/src/main/java/kr/co/ipdisk/quiz/`**: Kotlin 파일로 된 애플리케이션의 핵심 로직이 들어 있습니다.
+  - **`MainActivity.kt`**: 앱의 시작 화면을 관리하는 진입점입니다.
+  - **`QuestionActivity.kt`**: 각 퀴즈 질문을 표시하고 사용자의 응답을 처리합니다.
+  - **`ResultActivity.kt`**: 퀴즈 완료 후 결과를 표시합니다.
 
-- **`app/src/main/res/`**: Contains application resources.
-  - **`layout/`**: XML files defining the layout of each screen.
-  - **`drawable/`**: Directory for image resources.
-  - **`values/`**: Resource files defining colors, strings, themes, etc.
+- **`app/src/main/res/`**: 애플리케이션의 리소스가 들어 있는 폴더입니다.
+  - **`layout/`**: 각 화면의 레이아웃을 정의하는 XML 파일들입니다.
+  - **`drawable/`**: 이미지 리소스를 위한 디렉터리입니다.
+  - **`values/`**: 색상, 문자열, 테마 등을 정의하는 리소스 파일들입니다.
 
-- **`gradle/`**: Contains files related to the Gradle build system.
-
-## Installation and Run Instructions
-
-### 1. Clone the Repository
-
-Clone this project from GitHub to your local machine.
-
-```bash
-git clone https://github.com/yourusername/quiz-example.git
-cd quiz-example
-```
-
-### 2. Open in Android Studio
-
-Open the `quiz-example` directory in Android Studio.
-
-### 3. Build and Run the Project
-
-1. Build the project in Android Studio (`Build > Make Project`).
-2. Run the app on a real device or emulator (`Run > Run 'app'`).
+- **`gradle/`**: Gradle 빌드 시스템과 관련된 파일들이 들어 있습니다.
